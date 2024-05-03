@@ -12,7 +12,11 @@ module.exports = {
       archivo: ["Archivo"],
       paytone: ["Paytone"],
     },
-    extend: {},
+    extend: {
+        width: {
+        450: '450px', // Define a custom width
+      },
+    },
     colors: {
       "catalina-blue": {
         DEFAULT: "#052F6B",

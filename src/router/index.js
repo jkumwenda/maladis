@@ -21,8 +21,10 @@ const routeComponents = {
     import("@/views/main/registrations/products/ProductLicenses.vue"),
   RegisterProductLicenseView: () =>
     import("@/views/main/registrations/products/RegisterProductLicense.vue"),
-  BusinessesView: () =>
-    import("@/views/main/registrations/businesses/Businesses.vue"),
+  MDAsView: () =>
+    import("@/views/main/mdas/MDAs.vue"),
+  MDAView: () =>
+    import("@/views/main/mdas/MDA.vue"),
   UsersView: () => import("@/views/main/configurations/users/Users.vue"),
   ConfigurationsView: () =>
     import("@/views/main/configurations/Configurations.vue"),
@@ -82,11 +84,15 @@ const routes = [
         name: "RegisterProductLicense",
         component: routeComponents.RegisterProductLicenseView,
       },
-
       {
-        path: "/businesses",
-        name: "Businesses",
-        component: routeComponents.BusinessesView,
+        path: "/mdas",
+        name: "MDAs",
+        component: routeComponents.MDAsView,
+      },
+      {
+        path: "/mda",
+        name: "MDA",
+        component: routeComponents.MDAView,
       },
       {
         path: "/users",
